@@ -1,0 +1,1 @@
+Este comando kubectl rollout undo nos sirve para revertir un despliegue a una versión anterior.
