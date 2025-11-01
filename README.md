@@ -20,9 +20,15 @@
    - Rango MetalLB: [10.0.2.100 10.0.2.110]
 
    ### Screenshots
-   ![microk8s status](screenshots/parte1-microk8s-status.png)
-   ![Pods running](screenshots/parte1-pods-running.png)
-   ![Frontend via MetalLB](screenshots/parte1-frontend-browser.png)
+
+**microk8s status**  
+<img width="996" height="704" alt="1 microk8s_status" src="https://github.com/user-attachments/assets/da6f8955-b0e8-40cb-814b-f1e521cbd878" />
+
+**Pods corriendo**  
+<img width="1031" height="726" alt="2 podsRunning" src="https://github.com/user-attachments/assets/1386a718-1987-4354-ba01-2a6007340cc0" />
+
+**Frontend con IP externa**  
+<img width="1150" height="803" alt="3 frontend_ip_externa" src="https://github.com/user-attachments/assets/f73de76c-a007-4dcc-a9f5-cae647999f89" />
 
    ## Parte 2: Backend v2.1
 	
@@ -48,9 +54,9 @@
 	```
 
    ### Screenshots
-   ![Docker build](screenshots/parte2-docker-build.png)
-   ![Rollout](screenshots/parte2-rollout.png)
-   ![API Info](screenshots/parte2-api-info.png)
+   <img width="1111" height="70" alt="1 docker_images_v2 1" src="https://github.com/user-attachments/assets/663b3b91-78ae-4d27-9f79-be80f97e3e98" />
+	<img width="1390" height="304" alt="2 rollout_status" src="https://github.com/user-attachments/assets/e3c1c784-a233-4284-91a1-fe10fdde9265" />	
+	<img width="659" height="227" alt="4 respuesta_json_nuevo_servicio" src="https://github.com/user-attachments/assets/f233c246-088a-4073-bdea-3bc7d26b9549" />
 
    ## Parte 3: Frontend v2.2
 	- Editar los archivos: `frontend/src/app/app.component.html` y `frontend/src/app/app.component.ts`
@@ -59,9 +65,11 @@
 	- Subir a Docker Hub con una versión 2.2
 		
    ### Screenshots
-   ![Frontend build](screenshots/parte3-frontend-build.png)
-   ![Frontend UI](screenshots/parte3-frontend-ui.png)
-   ![System info display](screenshots/parte3-system-info.png)
+   <img width="989" height="724" alt="get_pods-w" src="https://github.com/user-attachments/assets/6b837cfd-b2a0-4748-a1c7-b3bdf4d9ae32" />
+   <img width="1442" height="1013" ![Uploading get_pods-w.png…]()
+alt="sistema_cargado" src="https://github.com/user-attachments/assets/04b2dad7-fca7-46ac-b662-6bd10e471c3e" />
+   <img width="1023" height="935" alt="ver_Info_del_sistema" src="https://github.com/user-attachments/assets/4be5bd5a-82df-4d69-88a6-bf617842b168" />
+
 
    ## Parte 4: Gestión de Versiones
 
@@ -69,28 +77,31 @@
 
 
    ### Screenshots
-   ![Rollback](screenshots/parte4-rollback.png)
-   ![Rollforward](screenshots/parte4-rollforward.png)
+   
+	<img width="1033" height="63" alt="rollback" src="https://github.com/user-attachments/assets/09b8c892-713e-42e9-8f58-2a0eb1443b09" />
+	<img width="1023" height="66" alt="rollforward" src="https://github.com/user-attachments/assets/af9b5038-dd23-4c2d-8209-15ea17ef34b7" />
 
    ## Parte 5: Ingress + MetalLB
 
-   **IP del Ingress:** [Tu IP de MetalLB]
+   **IP del Ingress:** [10.0.2.100 ]
 
    ### Screenshots
-   ![Ingress config](screenshots/parte5-ingress.png)
-   ![Acceso externo](screenshots/parte5-external-access.png)
+   
+	<img width="1022" height="396" alt="kubectl_describe_ingress" src="https://github.com/user-attachments/assets/bea1af88-8575-4ebe-b368-47ee98014503" />	
+	<img width="1054" height="881" alt="navegador" src="https://github.com/user-attachments/assets/6de6778b-19d2-4021-abb3-05db6bc3d560" />
 
    ## Conclusiones
 
    ### Aprendizajes principales
-   - [Punto 1]
-   - [Punto 2]
-   - [Punto 3]
+  	- Comprendí cómo desplegar aplicaciones en Kubernetes usando Deployments, Services e Ingress.
+	- Aprendí a usar kubectl para administrar pods, verificar estados y realizar rollouts.
+	- Entendí el flujo de construcción y despliegue de imágenes Docker desde código fuente hasta Kubernetes.
 
    ### Dificultades encontradas
-   - [Dificultad 1 y cómo la resolviste]
-   - [Dificultad 2 y cómo la resolviste]
+   - Tuve que volver a empezar desde 0 por que no lograba actualizar los cambios.
+   - Al final no pude conectarme a git y subir mi proyecto, finalmente lo logre con todo lo que solicito incluyendo los tags recomendados al principio y los cambios de la guia del proyecto.
 
    ### Reflexión
    [¿Cómo aplicarías esto en un proyecto real?]
+	Aplicaría este conocimiento en un proyecto real para automatizar el despliegue de aplicaciones mediante contenedores y Kubernetes,  garantizando escalabilidad, alta disponibilidad y facilidad de mantenimiento en entornos productivos.
    ```
